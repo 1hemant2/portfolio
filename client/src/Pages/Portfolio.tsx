@@ -55,7 +55,7 @@ const Portfolio = () => {
                         <div className='font-sans text-2xl underline text-gray-600'>GHOST CHAT</div>
                         <div className=" text-red-400 font-light">MERN STACK</div>
                         <button className="mt-6 h-[40px] w-[100px] border border-red-500 "
-                            onClick={() => handlePopup('social media platform facilitating seamless post sharing and user interaction. Integrated features such as uploading posts, liking, disliking, commenting, following, and messaging. Incorporated a notification system for user updates and ensured a consistent experience across devices through responsive design.', 'https://ghosts-chat.onrender.com/login', imgp1a, imgp1b, imgp1c)}
+                            onClick={() => handlePopup('social media platform facilitating seamless post sharing and user interaction. Integrated features such as uploading posts, liking, disliking, commenting, following, and messaging. Incorporated a notification system for user updates and ensured a consistent experience across devices through responsive design.', 'https://ghosts-chat.onrender.com/', imgp1a, imgp1b, imgp1c)}
                         >LEARN MORE</button>
                     </div>
                 </div>
