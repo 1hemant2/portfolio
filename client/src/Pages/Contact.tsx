@@ -39,6 +39,7 @@ const Contact: React.FC = () => {
             })
             .catch((error) => {
                 setErrorMessage('There was an error sending your message. Please try again later.');
+                console.log(error);
             });
     };
 
