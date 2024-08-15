@@ -52,14 +52,15 @@ const About = () => {
                         <div className='border-gray-500 border-2 w-full h-[25px] bg-sky-100 rounded-md mt-5'>
                             <div className='text-white font-semibold w-[85%] bg-sky-900 px-12'>C/C++</div>
                         </div>
-                        <div className='border-gray-500 border-2 w-full h-[25px] bg-sky-100 rounded-md mt-10'>
-                            <div className='text-white font-semibold w-[85%] bg-sky-900 px-12'>Java</div>
+                        <div className='border-gray-500 border-2 w-full h-[25px] bg-sky-100 rounded-md mt-5'>
+                            <div className='text-white font-semibold w-[85%] bg-sky-900 px-12'>HTML</div>
                         </div>
                         <div className='border-gray-500 border-2 w-full h-[25px] bg-sky-100 rounded-md'>
                             <div className='text-white font-semibold w-[80%] bg-sky-900 px-12'>CSS</div>
                         </div>
+
                         <div className='border-gray-500 border-2 w-full h-[25px] bg-sky-100 rounded-md'>
-                            <div className='text-white font-semibold w-[80%] bg-sky-900 px-12'>JavaScript</div>
+                            <div className='text-white font-semibold w-[85%] bg-sky-900 px-12'>JavaScript</div>
                         </div>
                         <div className='border-gray-500 border-2 w-full h-[25px] bg-sky-100 rounded-md'>
                             <div className='text-white font-semibold w-[80%] bg-sky-900 px-12'>React.js</div>
@@ -77,10 +78,22 @@ const About = () => {
                             <div className='text-white font-semibold w-[85%] bg-sky-900 px-12'>MySQL</div>
                         </div>
                         <div className='border-gray-500 border-2 w-full h-[25px] bg-sky-100 rounded-md'>
-                            <div className='text-white font-semibold w-[40%] bg-sky-900 px-12'>Docker</div>
+                            <div className='text-white font-semibold w-[70%] bg-sky-900 px-12'>Docker</div>
                         </div>
                         <div className='border-gray-500 border-2 w-full h-[25px] bg-sky-100 rounded-md'>
-                            <div className='text-white font-semibold w-[70%] bg-sky-900 px-12'>Git/GitHub</div>
+                            <div className='text-white font-semibold w-[80%] bg-sky-900 px-12'>Git/GitHub</div>
+                        </div>
+                        <div className='border-gray-500 border-2 w-full h-[25px] bg-sky-100 rounded-md'>
+                            <div className='text-white font-semibold w-[70%] bg-sky-900 px-12'>Socket</div>
+                        </div>
+                        <div className='border-gray-500 border-2 w-full h-[25px] bg-sky-100 rounded-md mt-10'>
+                            <div className='text-white font-semibold w-[85%] bg-sky-900 px-12'>C/C++</div>
+                        </div>
+                        <div className='border-gray-500 border-2 w-full h-[25px] bg-sky-100 rounded-md mt-10'>
+                            <div className='text-white font-semibold w-[60%] bg-sky-900 px-12'>Java</div>
+                        </div>
+                        <div className='border-gray-500 border-2 w-full h-[25px] bg-sky-100 rounded-md'>
+                            <div className='text-white font-semibold w-[80%] bg-sky-900 px-12'>Talwind CSS</div>
                         </div>
                     </div>
                     <div className='mt-7 sm:mt-2 sm:ml-10'>
@@ -100,25 +113,13 @@ const About = () => {
                 <Popup show={showPopup} handleClose={togglePopup}>
                     <div className='font-serif'>
                         <p className='mb-2'>
-                            I am Hemant Kumar, a Computer Science and Engineering graduate with a
-                            robust expertise in full-stack development. My proficiency encompasses
-                            a broad range of technologies, including both frontend and backend
-                            development, with a strong command of C, C++, JavaScript, and
-                            TypeScript.
+                            I'm Hemant Kumar, a software developer with a B.Tech. in Computer Science and Engineering. I specialize in full-stack development, particularly with React.js, Node.js, and MongoDB. I’ve gained hands-on experience through internships at Sirensys and Celebal Technology, where I worked on creating REST APIs and dynamic frontend components.
                         </p>
                         <p className='mb-2'>
-                            I have successfully led and executed projects such as <strong>GhostChat</strong> and{' '}
-                            <strong>Study Resource Hub</strong>, employing the MERN stack to develop highly
-                            responsive and user-centric platforms. My technical skills extend to
-                            HTML, CSS, React, Redux, Node.js, Express.js, MongoDB, MySQL, Docker,
-                            and various other tools and frameworks essential for modern web
-                            development.
+                            In addition to my professional experience, I've developed side projects like Ghost Chat, a scalable social media platform, and Study Resource Hub, a content-sharing site. I'm also an active problem solver with over 400 DSA problems solved on Geeks for Geeks and hold certifications like RHCSA Red Hat.
                         </p>
                         <p>
-                            Driven by a passion for innovation and continuous learning, I am eager
-                            to leverage my comprehensive skill set in full-stack development to
-                            contribute to cutting-edge projects and drive technological
-                            advancements.
+                            Currently based in Bengaluru, I'm open to new opportunities where I can leverage my skills in building impactful web applications.
                         </p>
                     </div>
                 </Popup>

@@ -20,6 +20,7 @@ const Protected: React.FC<ProtectedProps> = ({ children }) => {
                     <li className='text-red-800 cursor-pointer' onClick={() => navigate("/")}>HOME</li>
                     <li className='cursor-pointer' onClick={() => navigate("/about")}>ABOUT</li>
                     <li className='cursor-pointer' onClick={() => navigate("/portfolio")}>PORTFOLIO</li>
+                    <li className='cursor-pointer' onClick={() => navigate("/blog")}>Blog</li>
                     {/* <li className='cursor-pointer'>BLOG</li> */}
                     <li className='cursor-pointer' onClick={() => navigate("/contact")}>CONTACT</li>
                 </ul>
@@ -36,6 +37,7 @@ const Protected: React.FC<ProtectedProps> = ({ children }) => {
                             <li className='cursor-pointer py-2' onClick={() => handleNavigate("/")}>HOME</li>
                             <li className='cursor-pointer py-2' onClick={() => handleNavigate("/about")}>ABOUT</li>
                             <li className='cursor-pointer py-2' onClick={() => handleNavigate("/portfolio")}>PORTFOLIO</li>
+                            <li className='cursor-pointer py-2' onClick={() => handleNavigate("/Blog")}>Blog</li>
                             <li className='cursor-pointer py-2' onClick={() => handleNavigate("/contact")}>CONTACT</li>
                         </ul>
                     )
