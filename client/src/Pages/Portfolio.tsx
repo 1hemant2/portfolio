@@ -30,7 +30,6 @@ import imgp6b from '../assets/img34p5.png'
 import imgp6f from '../assets/img35p6.png'
 
 import imgp7a from '../assets/img36p1.png';
-import imgp7b from '../assets/img37p2.png';
 import imgp7c from '../assets/img38p3.png';
 
 const Portfolio = () => {
