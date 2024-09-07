@@ -42,7 +42,7 @@ const Protected: React.FC<ProtectedProps> = ({ children }) => {
       <div className="block sm:hidden bg-slate-800 font-serif border-lime-100 border-b-4">
         <div className="flex justify-end">
           <div onClick={() => setOpenMenu(!openMenu)}>
-            <i className="ri-menu-fold-3-line text-gray-400 text-3xl cursor-pointer"></i>
+            <i className="ri-menu-fill text-gray-300 text-4xl cursor-pointer "></i>
           </div>
         </div>
         {openMenu && (
