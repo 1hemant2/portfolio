@@ -40,7 +40,7 @@ const Protected: React.FC<ProtectedProps> = ({ children }) => {
 
       {/* Mobile Navigation */}
       <div className="block sm:hidden bg-slate-800 font-serif border-lime-100 border-b-4">
-        <div className="flex justify-end">
+        <div className="flex justify-end mr-3">
           <div onClick={() => setOpenMenu(!openMenu)}>
             <i className="ri-menu-fill text-gray-300 text-4xl cursor-pointer "></i>
           </div>
