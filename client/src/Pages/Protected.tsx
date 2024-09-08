@@ -1,5 +1,5 @@
 import React, { ReactNode, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 interface ProtectedProps {
   children: ReactNode;
@@ -7,6 +7,8 @@ interface ProtectedProps {
 
 const Protected: React.FC<ProtectedProps> = ({ children }) => {
   const navigate = useNavigate();
+  const location = useLocation();
+  const currentPath = location.pathname.slice(1);
   const [openMenu, setOpenMenu] = useState(false);
   const handleNavigate = (path: string) => {
     navigate(path);
@@ -18,21 +20,43 @@ const Protected: React.FC<ProtectedProps> = ({ children }) => {
       <nav className="hidden sm:block bg-slate-800 font-serif border-lime-100 border-b-4">
         <ul className="flex space-x-7 sm:pl-10 sm:ml-24 text-xl text-white items-center">
           <li
-            className="text-red-800 cursor-pointer"
+            className={`${
+              currentPath === "home" && "text-red-800"
+            } cursor-pointer`}
             onClick={() => navigate("/")}
           >
             HOME
           </li>
-          <li className="cursor-pointer" onClick={() => navigate("/about")}>
+          <li
+            className={`${
+              currentPath === "about" && "text-red-800"
+            } cursor-pointer`}
+            onClick={() => navigate("/about")}
+          >
             ABOUT
           </li>
-          <li className="cursor-pointer" onClick={() => navigate("/portfolio")}>
+          <li
+            className={`${
+              currentPath === "portfolio" && "text-red-800"
+            } cursor-pointer`}
+            onClick={() => navigate("/portfolio")}
+          >
             PORTFOLIO
           </li>
-          <li className="cursor-pointer" onClick={() => navigate("/blog")}>
+          <li
+            className={`${
+              currentPath === "blog" && "text-red-800"
+            } cursor-pointer`}
+            onClick={() => navigate("/blog")}
+          >
             BLOG
           </li>
-          <li className="cursor-pointer" onClick={() => navigate("/contact")}>
+          <li
+            className={`${
+              currentPath === "contact" && "text-red-800"
+            } cursor-pointer`}
+            onClick={() => navigate("/contact")}
+          >
             CONTACT
           </li>
         </ul>
@@ -48,31 +72,41 @@ const Protected: React.FC<ProtectedProps> = ({ children }) => {
         {openMenu && (
           <ul className="text-white pl-4">
             <li
-              className="cursor-pointer py-2"
+              className={`${
+                currentPath === "home" && "text-red-800"
+              } cursor-pointer py-2`}
               onClick={() => handleNavigate("/")}
             >
               HOME
             </li>
             <li
-              className="cursor-pointer py-2"
+              className={`${
+                currentPath === "about" && "text-red-800"
+              } cursor-pointer py-2`}
               onClick={() => handleNavigate("/about")}
             >
               ABOUT
             </li>
             <li
-              className="cursor-pointer py-2"
+              className={`${
+                currentPath === "portfolio" && "text-red-800"
+              } cursor-pointer py-2`}
               onClick={() => handleNavigate("/portfolio")}
             >
               PORTFOLIO
             </li>
             <li
-              className="cursor-pointer py-2"
-              onClick={() => handleNavigate("/Blog")}
+              className={`${
+                currentPath === "blog" && "text-red-800"
+              } cursor-pointer py-2`}
+              onClick={() => handleNavigate("/blog")}
             >
               BLOG
             </li>
             <li
-              className="cursor-pointer py-2"
+              className={`${
+                currentPath === "contact" && "text-red-800"
+              } cursor-pointer py-2`}
               onClick={() => handleNavigate("/contact")}
             >
               CONTACT

@@ -37,6 +37,7 @@ const Blog: React.FC = () => {
           <div
             className="relative h-[200px] cursor-pointer"
             onClick={() => handleClick(d.link)}
+            key={d.link}
           >
             <img
               src={d.image}
